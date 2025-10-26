@@ -2,7 +2,17 @@ package app;
 
 import java.util.Scanner;
 
+/**
+ * Kelas utama untuk menjalankan aplikasi pemesanan restoran.
+ * Program ini memungkinkan pengguna memilih menu makanan,
+ * memasukkan jumlah pesanan, dan mencetak nota.
+ */
 public class Main {
+
+    /**
+     * Method utama yang mengeksekusi program.
+     * @param args argumen baris perintah (tidak digunakan)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,7 +26,6 @@ public class Main {
         };
 
         Order order = new Order();
-
         System.out.println("=== Selamat Datang di Restoran ===");
 
         boolean ordering = true;
@@ -50,4 +59,3 @@ public class Main {
         scanner.close();
     }
 }
-
