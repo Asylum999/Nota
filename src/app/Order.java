@@ -41,7 +41,7 @@ public class Order {
      * termasuk subtotal, pajak 10%, dan total akhir.
      */
     public void printReceipt() {
-        System.out.println("\n=== Nota Pemesanan Restoran ===");
+        System.out.println("\nBill Restaurant");
         for (OrderItem item : items) {
             System.out.println(item.getReceiptLine());
         }
@@ -51,9 +51,9 @@ public class Order {
 
         System.out.println("-------------------------------");
         System.out.println("Subtotal   : " + rupiah.format(subtotal));
-        System.out.println("Pajak (10%): " + rupiah.format(tax));
-        System.out.println("Total Bayar: " + rupiah.format(grandTotal));
+        System.out.println("Tax (10%): " + rupiah.format(tax));
+        System.out.println("Cost : " + rupiah.format(grandTotal));
         System.out.println("===============================");
-        System.out.println("Terima kasih atas pesanan Anda!");
+        System.out.println("Thank You for ordering!");
     }
 }
